@@ -4,7 +4,7 @@ import { ENV } from './lib/env.js';
 
 const app = express();
 
-const __dirname = path.resolve();
+const __dirname = path.join();
 
 app.get("/health", (req, res) => {
     res.status(200).json({ msg: "api is running success" });
